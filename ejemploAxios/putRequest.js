@@ -1,24 +1,5 @@
 const axios =  require('axios').default;
 
-/*
-const data = {
-    title: 'Comer helado con soda',
-    completed: true,
-    id: 1
-}*/
-
-const data = {
-    id: 53,
-    title: 'Prueba',
-    genre: 'Realismo',
-    author: 'test',
-    publisher: 'UGB',
-    year: 2021,
-    cover: 'http://thisartworkdoesnotexist.com/',
-    updated_at: '2021-05-13 21:26:14', 
-    created_at: '2021-05-13 21:26:14'
-};
-
 const putRequest = async()=>{
     try{
         const respuesta=await axios.put('http://127.0.0.1:8000/api/book',
